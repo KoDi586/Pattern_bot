@@ -27,14 +27,14 @@ public abstract class CallbackCommand extends AbstractCommand {
      * Получает идентификатор чата из обновления
      */
     protected long getChatId(Update update) {
-        return update.callbackQuery().message().chat().id();
+        return update.callbackQuery().from().id();
     }
 
     /**
      * Получает имя пользователя из обновления
      */
     protected String getUsername(Update update) {
-        return update.callbackQuery().message().chat().username();
+        return update.callbackQuery().from().username();
     }
 
     /**

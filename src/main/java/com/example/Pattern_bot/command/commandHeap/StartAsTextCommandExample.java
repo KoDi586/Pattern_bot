@@ -41,7 +41,6 @@ public class StartAsTextCommandExample extends MessageCommand {
         // Получаем ID чата и имя пользователя
         long chatId = getChatId(update);
         String username = getUsername(update);
-//        String username = update.message().chat().username();
 
         // Отправляем приветственное сообщение
         sendTextMessage(chatId, "Hello, " + username + HELLO);
