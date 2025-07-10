@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: telegram_part
+
+server:
+  port: ${MY_SERVER_PORT}
+
+telegram:
+  bot:
+    name: ${TG_NAME}
+    token: ${TG_TOKEN}
